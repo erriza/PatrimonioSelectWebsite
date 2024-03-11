@@ -53,7 +53,6 @@ interface YouTubeEmbedProps {
   
   const YouTubeEmbed: React.FC<YouTubeEmbedProps> = ({ videoId }) => {
 
-    console.log('embed', videoId)
     return (
       <div className="aspect-w-16 aspect-h-9 m-4">
         <iframe

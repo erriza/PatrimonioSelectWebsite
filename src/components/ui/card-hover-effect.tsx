@@ -16,7 +16,6 @@ export const HoverEffect = ({
   className?: string;
 }) => {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
-  console.log('items', items)
 
   return (
     <div
