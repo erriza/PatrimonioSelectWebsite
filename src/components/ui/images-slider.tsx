@@ -1,4 +1,3 @@
-"use client";
 import { cn } from "../../utlis/cs";
 import { motion, AnimatePresence } from "framer-motion";
 import React, { useEffect, useState } from "react";
@@ -117,7 +116,9 @@ export const ImagesSlider = ({
   const areImagesLoaded = loadedImages.length > 0;
 
   return (
+    
     <div
+    {...loading && <p className="loading">Loading images...</p>}
       className={cn(
         "overflow-hidden h-full w-full relative flex items-center justify-center",
         className
