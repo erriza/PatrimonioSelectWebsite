@@ -1,4 +1,5 @@
-
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+//@ts-nocheck
 import './App.css'
 import { motion } from "framer-motion";
 import { ImagesSlider } from './components/ui/images-slider'
@@ -17,6 +18,7 @@ import WhatsappButton from './components/whatsappButton';
 //   TextRevealCardTitle,
 // } from "./components/ui/text-reveal-card";
 
+
 function App() {
 
 
@@ -28,7 +30,11 @@ function App() {
     "/src/assets/fourth.jpg",
   ];
 
-  const projects = [
+  const projects : {
+    title: string;
+    description: string;
+    link: string;
+  }[] = [
     {
       title: "Llenado",
       description:

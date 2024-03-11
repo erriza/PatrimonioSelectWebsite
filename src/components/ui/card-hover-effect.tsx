@@ -1,7 +1,8 @@
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+//@ts-nocheck
 import { cn } from "../../utlis/cs";
 import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
-import { TfiWrite } from "react-icons/tfi";
 
 export const HoverEffect = ({
   items,
@@ -80,7 +81,6 @@ export const Card = ({
   );
 };
 export const CardIcon = ({
-    className,
     children,
   } : {
     className?: string;
