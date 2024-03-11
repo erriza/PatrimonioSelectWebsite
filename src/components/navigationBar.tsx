@@ -17,7 +17,7 @@ export default function Navigationbar()  {
         <div className='bg-white flex justify-between items-center h-20 max-w-[1240px] mx-auto px-4 text-cyan-800 text-sm'>
       {/* Logo */}
       <h1 className='w-full text-3xl font-bold text-[#df8600]'>
-        <img className="h-16 w-24" src='/src/assets/logo.jpeg' alt="patrimonio select logo" />
+        <img className="h-16 w-24" src='/assets/logo.jpeg' alt="patrimonio select logo" />
       </h1>
 
       {/* Desktop Navigation */}
@@ -49,9 +49,9 @@ export default function Navigationbar()  {
       >
         {/* Mobile Logo */}
         <h1 className='sm:w-full text-3xl font-bold text-[#df8600] m-4 '>
-            <img className='h-16 w-24 flex items-center justify-center' src='/src/assets/logo.jpeg' alt="patrimonio select logo" />
+            <img className='h-16 w-24 flex items-center justify-center' src='/assets/logo.jpeg' alt="patrimonio select logo" />
         </h1>
-        
+
         {/* Mobile Navigation Items */}
         {navItems.map(item => (
           <li
