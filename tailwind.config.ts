@@ -1,7 +1,8 @@
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 //@ts-nocheck
-import { flattenColorPalette } from 'tailwindcss/lib/util/flattenColorPalette';
-
+const {
+  default: flattenColorPalette,
+} = require("tailwindcss/lib/util/flattenColorPalette");
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -22,7 +23,7 @@ module.exports = {
 
 // This plugin adds each Tailwind color as a global CSS variable, e.g. var(--gray-200).
 function addVariablesForColors({ addBase, theme }: { addBase: addBase; theme: Theme }): void {
-  const allColors = flattenColorPalette(theme("colors"));
+  const allColors = flattenColorPalette(theme.colors);
   const newVars = Object.fromEntries(
     Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
   );
