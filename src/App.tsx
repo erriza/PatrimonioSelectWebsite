@@ -24,10 +24,10 @@ function App() {
 
   const videoId : string = '5WpbmSfVbEs';
   const images = [
-    "/src/assets/main.jpg",
-    "/src/assets/second.jpg",
-    "/src/assets/third.jpg",
-    "/src/assets/fourth.jpg",
+    "/public/assets/main.jpg",
+    "/public/src/assets/second.jpg",
+    "/public/src/assets/third.jpg",
+    "/public/src/assets/fourth.jpg",
   ];
 
   const projects : {
